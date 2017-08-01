@@ -1,0 +1,44 @@
+h1{
+    font-size:72pt;
+    font-family:"Arial Black", Helvetica, sans-serif;
+    font-weight:bold;
+    text-align:center;
+}
+
+h2{
+    font-size:56pt;
+    font-family:"Arial Black", Helvetica, sans-serif;
+    font-weight:bold;
+    text-align:center;
+
+    cursor: pointer; cursor: hand;
+}
+
+#footerDiv{
+    width: 94%;
+    height: 100px;
+    padding: 0px;
+    margin-left: 3%;
+    bottom: 0;
+    position: absolute;
+}
+
+p {
+    font-size:12pt;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding-left: 2%;
+    padding-right: 2%;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
