@@ -16,14 +16,15 @@
     <meta name="description" content="Turn This Site White. That's the only goal. Can we do it?">
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://use.fontawesome.com/548d46c3c4.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="index.js"></script>
 </head>
 
 <body ng-controller="homeCtrl" ng-style="{'background-color': color }">
-<div class="container" ng-show="loaded">
+<div class="container" ng-show="loaded" ng-style="{'color': inverseColor }">
     <h1 ng-style="{'color': inverseColor }">{{color}}</h1>
-    <h2 ng-style="{'color': inverseColor }" ng-click="makeWhite()">Make Whiter</h2>
+    <h2 ng-style="{'color': inverseColor }" ng-click="makeWhite()"><i class="fa fa-arrow-up"></i> Make Whiter</h2>
 </div>
 
 </body>
