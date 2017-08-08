@@ -24,9 +24,9 @@
 
 <body ng-controller="homeCtrl" ng-style="{'background-color': color }">
 <div class="container" ng-show="loaded" ng-style="{'color': inverseColor }">
-    <h2 ng-style="{'color': inverseColor }" ng-click="makeDark()"><i class="fa fa-arrow-down"></i> Make Darker</h2>
-    <h1 ng-style="{'color': inverseColor }">{{color}}</h1>
     <h2 ng-style="{'color': inverseColor }" ng-click="makeLight()"><i class="fa fa-arrow-up"></i> Make Lighter</h2>
+    <h1 ng-style="{'color': inverseColor }">{{color}}</h1>
+    <h2 ng-style="{'color': inverseColor }" ng-click="makeDark()"><i class="fa fa-arrow-down"></i> Make Darker</h2>
 </div>
 
 </body>
