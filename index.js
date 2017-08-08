@@ -11,8 +11,16 @@ app.controller("homeCtrl", function($scope, $http, $interval) {
         });
     };
 
-    $scope.makeWhite = function() {
-        $http.put($scope.backendHost + "/color").then(function (response) {
+    $scope.makeLight = function() {
+        $http.put($scope.backendHost + "/lighter").then(function (response) {
+            $scope.color = response.data.color;
+            $scope.inverseColor = response.data.inverseColor
+        });
+        ga('send', 'event', 'button-click', 'whiter');
+    };
+
+    $scope.makeDark = function() {
+        $http.put($scope.backendHost + "/darker").then(function (response) {
             $scope.color = response.data.color;
             $scope.inverseColor = response.data.inverseColor
         });
