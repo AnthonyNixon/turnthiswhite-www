@@ -16,7 +16,7 @@ app.controller("homeCtrl", function($scope, $http, $interval) {
             $scope.color = response.data.color;
             $scope.inverseColor = response.data.inverseColor
         });
-        ga('send', 'event', 'button-click', 'whiter');
+        ga('send', 'event', 'button-click', 'lighter');
     };
 
     $scope.makeDark = function() {
@@ -24,7 +24,7 @@ app.controller("homeCtrl", function($scope, $http, $interval) {
             $scope.color = response.data.color;
             $scope.inverseColor = response.data.inverseColor
         });
-        ga('send', 'event', 'button-click', 'whiter');
+        ga('send', 'event', 'button-click', 'darker');
     };
 
     $interval(updateColorFromServer, 1000);
